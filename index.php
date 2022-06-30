@@ -1,1 +1,1 @@
-<?php include_once("app.py"); ?>
+<?php include_once("templates/index.html"); ?>
