@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <h1 class="heading">Blowfish Algorithm</h1>
+</head>
+<form action="/decrypt" method="POST">
+    <input type="text" name="decrypt" placeholder="Enter encrypted message..."><br>
+    <button class="button" type="submit" value="submit">
+        Decrypt
+    </button>
+</form>
+{% if dec_text %}
+<p>
+    The decrypted text is <b> {{dec_text}}</b>
+</p>
+{% endif %}
+
+</body>
+
+</html>
