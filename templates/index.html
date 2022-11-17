@@ -3,18 +3,25 @@
 
 <head>
     <link rel="stylesheet" href="../static/css/style.css">
-    <h1 class="heading">Blowfish Algorithm</h1>
 </head>
 
 <body class="Body">
-    <form action="/" method="POST">
-        <input type="text" name="to" placeholder="Enter Email you want to send to..."><br>
-        <input type="text" name="subject" placeholder="Enter the Subject..."><br>
-        <input type="text" name="body" placeholder="Enter the message..."><br>
-        <button class="button" type="submit" value="submit">
-            Send Mail
-        </button>
-    </form>
+    <div class="container">
+        <h1 class="heading">Blowfish Algorithm</h1>
+        <br>
+        <form action="/" method="POST" class="formCSS">
+            <div class="inputTop">
+                <input type="text" name="to" placeholder="Receiver Email" class="mailId">
+                <!-- <div style="width: 10%"></div> -->
+                <input type="text" name="subject" placeholder="Subject" class="subject">
+            </div>
+            <!-- <input type="text" name="body" placeholder="Body" class="EmailBody"><br> -->
+            <textarea rows="25" type="text" name="body" placeholder="Enter text" class="EmailBody"></textarea>
+            <button class="button" type="submit" value="submit">Send</button>
+        </form>
+
+
+    </div>
 
 </body>
 

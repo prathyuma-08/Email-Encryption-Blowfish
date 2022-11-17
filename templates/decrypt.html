@@ -3,20 +3,21 @@
 
 <head>
     <link rel="stylesheet" href="../static/css/style.css">
-    <h1 class="heading">Blowfish Algorithm</h1>
 </head>
-<form action="/decrypt" method="POST">
-    <input type="text" name="decrypt" placeholder="Enter encrypted message..."><br>
-    <button class="button" type="submit" value="submit">
-        Decrypt
-    </button>
-</form>
-{% if dec_text %}
-<p>
-    The decrypted text is <b> {{dec_text}}</b>
-</p>
-{% endif %}
 
+<body class="Body">
+    <div class="container">
+        <h1 class="heading">Blowfish Algorithm</h1>
+        <br>
+        <form action="/decrypt" method="POST">
+            <textarea type="text" name="decrypt" placeholder="Enter text" class="EmailBody" rows="25"></textarea>
+            <button class="button" type="submit" value="submit">Decrypt</button>
+        </form>
+        {% if dec_text %}
+        <h2 class="heading" style="font-size: x-large;">Decrypted Content</h2>
+        <textarea class="EmailBody" rows="25"> {{dec_text}}</textarea>
+        {% endif %}
+    </div>
 </body>
 
 </html>
